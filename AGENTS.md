@@ -93,7 +93,19 @@ com.bloggingyou.api
 
 ## Git
 
-- Branches: `<tipo>/<descricao-kebab>` — `feat`, `fix`, `chore`, `refactor`, `docs`, `test`, `spike`.
+- Branches: `<tipo>/<descricao-kebab>`. Os sete tipos, e quando usar cada um:
+
+  | Tipo | Usar quando |
+  | --- | --- |
+  | `feat` | Entrega algo novo que o usuário do sistema percebe |
+  | `fix` | Corrige comportamento errado |
+  | `docs` | Só documentação para pessoas (README, guias) |
+  | `test` | Só teste, sem alterar o código testado |
+  | `refactor` | Reescrita que não muda o comportamento observável |
+  | `chore` | Build, dependência, configuração de ferramenta |
+  | `spike` | Investigação exploratória, código descartável |
+
+  Na dúvida entre `docs` e `chore`, a pergunta é quem é o leitor: texto para uma pessoa entender o projeto é `docs`; arquivo que muda o comportamento de uma ferramenta é `chore`, mesmo sendo texto.
 - Branch de feature inclui o identificador: `feat/f02-gerador-de-slug`.
 - Commits em português, no imperativo, curtos: `feat: adiciona gerador de slug`.
 - Nunca faça push sem pedido explícito.
